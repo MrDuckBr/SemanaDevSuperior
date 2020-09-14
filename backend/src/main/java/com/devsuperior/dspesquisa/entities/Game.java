@@ -26,9 +26,11 @@ public class Game implements Serializable{
 	private String title;
 	private Plataform platform;
 	
+	
 	@ManyToOne // Muitos pra um
 	@JoinColumn(name = "genre_id")// chave estrangeira na tabela game
 	private Genre genre;
+	
 	
 	@OneToMany(mappedBy = "game")
 	List<Record> records = new ArrayList<>();
