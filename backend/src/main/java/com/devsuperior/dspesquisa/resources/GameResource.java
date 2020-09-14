@@ -17,7 +17,7 @@ import com.devsuperior.dspesquisa.service.GameService;
 @RequestMapping(value = "/games")
 public class GameResource {
 	
-	@Autowired
+	@Autowired //???
 	private GameService service;
 	//implementacao de rotas;
 	
