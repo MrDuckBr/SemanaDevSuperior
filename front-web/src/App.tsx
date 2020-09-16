@@ -1,9 +1,14 @@
 import React from 'react';
 import './App.css';
+import Header from './components/Header/Index';
+
 
 function App() {
   return (
-    <h1> Hello Semana Dev Superior</h1>
+    <div>
+    <Header/>
+
+    </div>
   );
 }
 
