@@ -9,6 +9,7 @@ type Props = {
 
 const Pagination = ({totalPages = 0, goToPage,activePage}: Props) =>{
   
+    
   const paginationItens = Array.from(Array(totalPages).keys());
     return(  
     <div className="pagination-container">
