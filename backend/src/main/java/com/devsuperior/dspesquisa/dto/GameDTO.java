@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 
 import com.devsuperior.dspesquisa.entities.Game;
-import com.devsuperior.dspesquisa.entities.enums.Plataform;
+import com.devsuperior.dspesquisa.entities.enums.Platform;
 
 
 public class GameDTO implements Serializable{ // classe simples para carregar os dados do game
@@ -13,7 +13,7 @@ public class GameDTO implements Serializable{ // classe simples para carregar os
 	private static final long serialVersionUID = 1L;
 	private Long id;
 	private String title;
-	private Plataform plataform;
+	private Platform platform;
 	
 	
 	public GameDTO() {
@@ -23,7 +23,7 @@ public class GameDTO implements Serializable{ // classe simples para carregar os
 	public GameDTO(Game entity) {
 		id = entity.getId();
 		title = entity.getTitle();
-		plataform= entity.getPlataform();
+		platform= entity.getPlataform();
 	}
 
 
@@ -47,13 +47,13 @@ public class GameDTO implements Serializable{ // classe simples para carregar os
 	}
 
 
-	public Plataform getPlataform() {
-		return plataform;
+	public Platform getPlataform() {
+		return platform;
 	}
 
 
-	public void setPlataform(Plataform plataform) {
-		this.plataform = plataform;
+	public void setPlataform(Platform plataform) {
+		this.platform = plataform;
 	}
 	
 	

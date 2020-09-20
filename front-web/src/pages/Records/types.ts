@@ -1,7 +1,4 @@
-export type RecordsResponse = {
-    content: RecordItem[]
-    totalPages: number
-}
+
 
 export type RecordItem = {
     id: number
@@ -11,6 +8,11 @@ export type RecordItem = {
     gameTitle: string
     gamePlatform: Platform
     genreName: string
+}
+
+export type RecordsResponse = {
+    content: RecordItem[]
+    totalPages: number
 }
 
 export type Platform = 'XBOX' | 'PC' | 'PLAYSTATION'

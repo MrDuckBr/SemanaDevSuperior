@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.time.Instant;
 
 import com.devsuperior.dspesquisa.entities.Record;
-import com.devsuperior.dspesquisa.entities.enums.Plataform;
+import com.devsuperior.dspesquisa.entities.enums.Platform;
 
 
 public class RecordDTO implements Serializable{
@@ -15,7 +15,7 @@ public class RecordDTO implements Serializable{
 	private String name;
 	private Integer age;
 	private String gameTitle;
-	private Plataform gamePlatform;
+	private Platform gamePlatform;
 	private String genreName;
 	
 
@@ -84,12 +84,12 @@ public class RecordDTO implements Serializable{
 	}
 
 
-	public Plataform getGamePlatform() {
+	public Platform getGamePlatform() {
 		return gamePlatform;
 	}
 
 
-	public void setGamePlatform(Plataform gamePlatform) {
+	public void setGamePlatform(Platform gamePlatform) {
 		this.gamePlatform = gamePlatform;
 	}
 
