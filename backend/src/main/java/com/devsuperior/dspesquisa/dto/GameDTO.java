@@ -23,7 +23,7 @@ public class GameDTO implements Serializable{ // classe simples para carregar os
 	public GameDTO(Game entity) {
 		id = entity.getId();
 		title = entity.getTitle();
-		platform= entity.getPlataform();
+		platform= entity.getPlatform();
 	}
 
 
@@ -47,13 +47,13 @@ public class GameDTO implements Serializable{ // classe simples para carregar os
 	}
 
 
-	public Platform getPlataform() {
+	public Platform getPlatform() {
 		return platform;
 	}
 
 
-	public void setPlataform(Platform plataform) {
-		this.platform = plataform;
+	public void setPlatform(Platform platform) {
+		this.platform = platform;
 	}
 	
 	

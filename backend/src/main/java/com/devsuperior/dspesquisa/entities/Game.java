@@ -41,11 +41,11 @@ public class Game implements Serializable{
 	}
 
 
-	public Game(Long id, String title, Platform plataform, Genre genre) {
+	public Game(Long id, String title, Platform platform, Genre genre) {
 		super();
 		this.id = id;
 		this.title = title;
-		this.platform = plataform;
+		this.platform = platform;
 		this.genre = genre;
 	}
 
@@ -70,12 +70,12 @@ public class Game implements Serializable{
 	}
 
 
-	public Platform getPlataform() {
+	public Platform getPlatform() {
 		return platform;
 	}
 
 
-	public void setPlataform(Platform platform) {
+	public void setPlatform(Platform platform) {
 		this.platform = platform;
 	}
 

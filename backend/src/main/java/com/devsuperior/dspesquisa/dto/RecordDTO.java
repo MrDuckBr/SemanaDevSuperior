@@ -29,7 +29,7 @@ public class RecordDTO implements Serializable{
 		name = entity.getName();
 		age = entity.getAge();
 		gameTitle = entity.getGame().getTitle();
-		gamePlatform = entity.getGame().getPlataform();
+		gamePlatform = entity.getGame().getPlatform();
 		genreName = entity.getGame().getGenre().getName();
 	}
 
